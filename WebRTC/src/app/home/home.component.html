@@ -1,0 +1,55 @@
+<!-- <video autoplay muted loop id="myVideo">
+    <source src="../../assets/bg.webm" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video> -->
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <div class="heading-lp text-center">
+            <p>iChat</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+      <div class="sub-heading-lp text-center">
+          <p>
+            <span>{{todayDate | date}}</span>, 
+            <span>{{todayDate | date:'hh:mm:ss a':'+0530'}}</span>
+          </p>
+      </div>  
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <div class="card zoom">
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Call ID" aria-label="Call ID" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Click Me</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card zoom">
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Call Number" aria-label="Call Number" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Call</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-12">
+      <div class="text-center mt-3">
+        <button type="button" routerLink="/chat" class="btn btn-light">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
